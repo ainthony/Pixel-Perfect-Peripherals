@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Perfect Peripherals - Homepage</title>
+    <style>
+        /* Basic reset and fonts */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f7;
+            color: #333;
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #2a2a2a;
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: #63e6be;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #63e6be;
+        }
+        
+        .user-actions {
+            display: flex;
+            align-items: center;
+        }
+        
+        .user-actions a {
+            color: white;
+            margin-left: 1rem;
+            text-decoration: none;
+        }
+        
+        .cart-icon {
+            position: relative;
+        }
+        
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: #63e6be;
+            color: #2a2a2a;
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            font-size: 0.7rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Banner styles */
+        .hero-banner {
+            background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('/api/placeholder/1200/400');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            padding: 0 5%;
+        }
+        
+        .hero-content {
+            max-width: 600px;
+        }
+        
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #63e6be;
+            color: #2a2a2a;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #4bc8a4;
+            transform: translateY(-2px);
+        }
+        
+        /* Category section */
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin: 3rem 0 2rem;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background-color: #63e6be;
+            margin: 0.5rem auto;
+        }
+        
+        .categories {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            padding: 0 5%;
+        }
+        
+        .category-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-img {
+            height: 150px;
+            background-color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .category-title {
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        /* Featured products */
+        .featured-products {
+            margin: 3rem 0;
+            padding: 0 5%;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-img {
+            height: 200px;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .product-info {
+            padding: 1rem;
+        }
+        
+        .product-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-price {
+            color: #2a2a2a;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .add-to-cart {
+            background-color: #2a2a2a;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+        
+        .add-to-cart:hover {
+            background-color: #63e6be;
+            color: #2a2a2a;
+        }
+        
+        /* Newsletter */
+        .newsletter {
+            background-color: #2a2a2a;
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+        
+        .newsletter h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .newsletter p {
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-input {
+            flex-grow: 1;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+        
+        .newsletter-button {
+            background-color: #63e6be;
+            color: #2a2a2a;
+            border: none;
+            padding: 0 1.5rem;
+            border-radius: 0 4px 4px 0;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            padding: 3rem 5% 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .footer-column h3:after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: #63e6be;
+            margin-top: 0.5rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #63e6be;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+        }
+        
+        /* Media queries */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            nav ul {
+                margin: 1rem 0;
+            }
+            
+            .hero-banner {
+                height: 300px;
+                text-align: center;
+                justify-content: center;
+            }
+            
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            
+            .newsletter-form {
+                flex-direction: column;
+            }
+            
+            .newsletter-input {
+                border-radius: 4px;
+                margin-bottom: 0.5rem;
+            }
+            
+            .newsletter-button {
+                border-radius: 4px;
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="/api/placeholder/40/40" alt="PPP Logo" style="margin-right: 10px;">
+            Pixel <span>Perfect</span> Peripherals
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Keyboards</a></li>
+                <li><a href="#">Mice</a></li>
+                <li><a href="#">Monitors</a></li>
+                <li><a href="#">Audio</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </nav>
+        
+        <div class="user-actions">
+            <a href="#">Login</a>
+            <a href="#" class="cart-icon">
+                Cart
+                <span class="cart-count">2</span>
+            </a>
+        </div>
+    </header>
+    
+    <!-- Hero Banner -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1>Enhance Your Digital Experience</h1>
+            <p>Find the perfect peripherals to elevate your work, gaming, and creative setups. Curated by students, for everyone.</p>
+            <a href="#" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+    
+    <!-- Categories -->
+    <section>
+        <h2 class="section-title">Browse Categories</h2>
+        <div class="categories">
+            <div class="category-card">
+                <div class="category-img">
+                    <img src="/api/placeholder/200/150" alt="Keyboards">
+                </div>
+                <div class="category-title">Keyboards</div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-img">
+                    <img src="/api/placeholder/200/150" alt="Mice">
+                </div>
+                <div class="category-title">Mice & Trackpads</div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-img">
+                    <img src="/api/placeholder/200/150" alt="Monitors">
+                </div>
+                <div class="category-title">Monitors</div>
+            </div>
+            
+            <div class="category-card">
+                <div class="category-img">
+                    <img src="/api/placeholder/200/150" alt="Audio">
+                </div>
+                <div class="category-title">Audio</div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="/api/placeholder/200/200" alt="Mechanical Keyboard">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Pixel Perfect Mechanical Gaming Keyboard</div>
+                    <div class="product-price">$129.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="/api/placeholder/200/200" alt="Wireless Mouse">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Pixel Perfect Precision Wireless Mouse</div>
+                    <div class="product-price">$69.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="/api/placeholder/200/200" alt="4K Monitor">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Pixel Perfect 27" 4K HDR Monitor</div>
+                    <div class="product-price">$449.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="/api/placeholder/200/200" alt="Wireless Headphones">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Pixel Perfect Noise-Cancelling Wireless Headphones</div>
+                    <div class="product-price">$199.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="#">Keyboards</a></li>
+                    <li><a href="#">Mice</a></li>
+                    <li><a href="#">Monitors</a></li>
+                    <li><a href="#">Audio</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2025 Pixel Perfect Peripherals. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
