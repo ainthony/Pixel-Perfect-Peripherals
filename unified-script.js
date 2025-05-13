@@ -8,7 +8,7 @@ const allProducts = {
             price: 1799,
             rating: 4.7,
             reviews: 56,
-            quantity: 15,
+            quantity: 50,
             imageUrl: "keyboardproduct4.png",
             description: "Ultra-compact 60% form factor mechanical keyboard with hot-swappable switches. Choose between Red or Brown switches for your perfect typing and gaming experience.",
             specs: [
@@ -27,7 +27,7 @@ const allProducts = {
             price: 1999,
             rating: 4.8,
             reviews: 72,
-            quantity: 30,
+            quantity: 50,
             imageUrl: "keyboardproduct3.png",
             description: "Compact yet functional 65% layout with arrow keys and hot-swappable switches. Available with Red, Brown, or Blue switches to match your preferences.",
             specs: [
@@ -45,9 +45,9 @@ const allProducts = {
             category: "keyboards",
             price: 2199,
             rating: 4.9,
-            reviews: 88,
-            quantity: 14,
-            imageUrl: "keyboard-75-percent.png",
+            reviews: 50,
+            quantity: 50,
+            imageUrl: "75%.png",
             description: "Professional-grade 75% layout keyboard with function row and hot-swappable switches. Choose from Red, Brown, or Blue switches for customized performance.",
             specs: [
                 "75% layout with function row",
@@ -60,17 +60,17 @@ const allProducts = {
         },
         {
             id: 4,
-            name: "Pixel Perfect 75% Ultra-Slim Low-Profile Mechanical Keyboard",
+            name: "Pixel Perfect 60% Ultra-Slim Low-Profile Mechanical Keyboard",
             category: "keyboards",
             price: 2499,
             rating: 4.6,
             reviews: 64,
-            quantity: 21,
-            imageUrl: "keyboard-low-profile.png",
+            quantity: 50,
+            imageUrl: "slim.png",
             description: "Ultra-thin design with special linear low-profile switches for rapid actuation and minimal travel distance. Perfect for gamers seeking speed and professionals wanting comfort.",
             specs: [
                 "Low-profile special linear switches",
-                "75% layout in slim form factor",
+                "60% layout in slim form factor",
                 "Ultra-thin keycaps",
                 "Multi-device Bluetooth connectivity",
                 "Backlit keys with dynamic effects",
@@ -84,7 +84,7 @@ const allProducts = {
             price: 2299,
             rating: 4.7,
             reviews: 91,
-            quantity: 18,
+            quantity: 50,
             imageUrl: "pixel perfect mechanical gaming keyboard.png",
             description: "Tenkeyless design saves space while maintaining full functionality. Available with Red or Brown switches for gaming or typing preference.",
             specs: [
@@ -103,8 +103,8 @@ const allProducts = {
             price: 2399,
             rating: 4.7,
             reviews: 83,
-            quantity: 16,
-            imageUrl: "keyboard-fullsize.png",
+            quantity: 50,
+            imageUrl: "full.png",
             description: "Complete full-size layout with numpad and all function keys. Choose between tactile Brown or clicky Blue switches for your ideal typing experience.",
             specs: [
                 "Full-size 104-key layout",
@@ -125,7 +125,7 @@ const allProducts = {
             price: 1599,
             rating: 4.5,
             reviews: 42,
-            quantity: 20,
+            quantity: 50,
             imageUrl: "mouseproduct2.png",
             description: "Precision glass trackpad with multi-touch gesture support. Seamlessly connect to any Bluetooth-enabled device for intuitive navigation.",
             specs: [
@@ -144,7 +144,7 @@ const allProducts = {
             price: 899,
             rating: 4.6,
             reviews: 58,
-            quantity: 31,
+            quantity: 50,
             imageUrl: "mouseproduct3.png",
             description: "Symmetrical design for both left and right-handed gamers. High-precision sensor and programmable buttons for competitive gaming advantage.",
             specs: [
@@ -163,7 +163,7 @@ const allProducts = {
             price: 999,
             rating: 4.8,
             reviews: 67,
-            quantity: 18,
+            quantity: 50,
             imageUrl: "mouseproduct4.png",
             description: "Ergonomically shaped for right-handed users with contoured grip for extended gaming sessions. Advanced sensor for pixel-perfect tracking.",
             specs: [
@@ -182,7 +182,7 @@ const allProducts = {
             price: 399,
             rating: 4.4,
             reviews: 39,
-            quantity: 90,
+            quantity: 50,
             imageUrl: "mouseproduct5.png",
             description: "Reliable and comfortable mouse for everyday office use. Precise tracking and ergonomic design for all-day comfort.",
             specs: [
@@ -201,8 +201,8 @@ const allProducts = {
             price: 1399,
             rating: 4.7,
             reviews: 72,
-            quantity: 30,
-            imageUrl: "ambidextrous-wireless-mouse.png",
+            quantity: 50,
+            imageUrl: "mouseproduct3.png",
             description: "Freedom with precision. Symmetrical wireless gaming mouse with zero lag and battery life that lasts through your longest gaming sessions.",
             specs: [
                 "25,000 DPI sensor",
@@ -242,7 +242,7 @@ const allProducts = {
             price: 3999,
             rating: 4.2,
             reviews: 31,
-            quantity: 11,
+            quantity: 50,
             imageUrl: "pixel perfect 27 4k hdr monitor.png",
             description: "Entry-level 20-inch monitor with 60Hz refresh rate. Perfect for office work and casual use with crisp visuals and eye-care technology.",
             specs: [
@@ -261,8 +261,8 @@ const allProducts = {
             price: 4499,
             rating: 4.3,
             reviews: 43,
-            quantity: 18,
-            imageUrl: "monitor-21inch.png",
+            quantity: 50,
+            imageUrl: "21 75.png",
             description: "21-inch display with 75Hz refresh rate for smoother visuals. Great for everyday computing and light gaming with enhanced color accuracy.",
             specs: [
                 "21-inch IPS display",
@@ -280,8 +280,8 @@ const allProducts = {
             price: 5999,
             rating: 4.5,
             reviews: 56,
-            quantity: 25,
-            imageUrl: "monitor-22inch-120hz.png",
+            quantity: 50,
+            imageUrl: "22 120.png",
             description: "22-inch gaming monitor with 120Hz refresh rate for fluid gameplay. Experience reduced motion blur and sharper visuals in fast-paced games.",
             specs: [
                 "22-inch VA panel",
@@ -299,8 +299,8 @@ const allProducts = {
             price: 6499,
             rating: 4.7,
             reviews: 64,
-            quantity: 30,
-            imageUrl: "monitor-22inch-144hz.png",
+            quantity: 50,
+            imageUrl: "22 144.png",
             description: "Step up your game with this 22-inch monitor featuring a 144Hz refresh rate. Enjoy butter-smooth gameplay with HDR support for enhanced visuals.",
             specs: [
                 "22-inch IPS panel",
@@ -318,8 +318,8 @@ const allProducts = {
             price: 8999,
             rating: 4.8,
             reviews: 78,
-            quantity: 32,
-            imageUrl: "monitor-24inch.png",
+            quantity: 50,
+            imageUrl: "24 240.png",
             description: "Professional esports-grade 24-inch monitor with ultra-fast 240Hz refresh rate. Gain competitive advantage with incredible smoothness and clarity.",
             specs: [
                 "24-inch IPS panel",
@@ -338,7 +338,7 @@ const allProducts = {
             rating: 4.9,
             reviews: 86,
             quantity: 69,
-            imageUrl: "monitor-25inch.png",
+            imageUrl: "25 360.png",
             description: "Ultimate competitive gaming monitor with lightning-fast 360Hz refresh rate. Experience the pinnacle of esports display technology with unmatched response times.",
             specs: [
                 "25-inch Fast IPS panel",
@@ -356,8 +356,8 @@ const allProducts = {
             price: 14999,
             rating: 4.8,
             reviews: 72,
-            quantity: 28,
-            imageUrl: "monitor-ultrawide.png",
+            quantity: 50,
+            imageUrl: "curved.png",
             description: "Immersive 34-inch curved ultrawide monitor for gaming and productivity. Expand your view with a 21:9 aspect ratio and stunning visuals.",
             specs: [
                 "34-inch curved VA panel (1500R)",
@@ -378,7 +378,7 @@ const allProducts = {
             price: 999,
             rating: 4.3,
             reviews: 47,
-            quantity: 25,
+            quantity: 50,
             imageUrl: "audioproducts2.png",
             description: "Crisp and clear desktop speakers with 2.0 stereo sound. Perfect for everyday use with balanced audio reproduction and elegant design.",
             specs: [
@@ -397,8 +397,8 @@ const allProducts = {
             price: 799,
             rating: 4.2,
             reviews: 38,
-            quantity: 39,
-            imageUrl: "office-headphones.png",
+            quantity: 50,
+            imageUrl: "office.png",
             description: "Comfortable wired headphones for office use with noise isolation. Focus on your work with clear audio and all-day wearing comfort.",
             specs: [
                 "40mm dynamic drivers",
@@ -416,8 +416,8 @@ const allProducts = {
             price: 1999,
             rating: 4.6,
             reviews: 89,
-            quantity: 56,
-            imageUrl: "wireless-earbuds.png",
+            quantity: 50,
+            imageUrl: "earbuds.png",
             description: "True wireless earbuds with premium sound quality and extended battery life. Experience freedom with comfortable fit and touch controls.",
             specs: [
                 "True wireless design",
@@ -435,8 +435,8 @@ const allProducts = {
             price: 1799,
             rating: 4.7,
             reviews: 74,
-            quantity: 24,
-            imageUrl: "wired-headset.png",
+            quantity: 50,
+            imageUrl: "wired headset.png",
             description: "High-performance wired gaming headset with virtual surround sound. Experience immersive audio with precision directional sound and crystal-clear microphone.",
             specs: [
                 "50mm neodymium drivers",
@@ -454,7 +454,7 @@ const allProducts = {
             price: 2499,
             rating: 4.8,
             reviews: 92,
-            quantity: 37,
+            quantity: 50,
             imageUrl: "pixel perfect noise-cancelling wireless headphones.png",
             description: "Dual connectivity headphones with option for wireless or wired connection. Experience premium audio quality with the freedom of wireless or the reliability of wired.",
             specs: [
@@ -473,8 +473,8 @@ const allProducts = {
             price: 499,
             rating: 4.1,
             reviews: 53,
-            quantity: 35,
-            imageUrl: "wired-earphones.png",
+            quantity: 50,
+            imageUrl: "earphones.png",
             description: "Affordable wired earphones with balanced sound signature. Perfect for everyday listening with comfortable fit and inline microphone.",
             specs: [
                 "10mm dynamic drivers",
@@ -495,8 +495,8 @@ const allProducts = {
             price: 2999,
             rating: 4.7,
             reviews: 61,
-            quantity: 12,
-            imageUrl: "graphics-tablet.png",
+            quantity: 50,
+            imageUrl: "drawing.png",
             description: "Professional graphics tablet for digital artists with pressure-sensitive stylus. Create digital art with precision and control on a responsive drawing surface.",
             specs: [
                 "10 x 6 inch active area",
@@ -515,7 +515,7 @@ const allProducts = {
             rating: 4.5,
             reviews: 46,
             quantity: 100,
-            imageUrl: "usb-cable.png",
+            imageUrl: "c.png",
             description: "High-quality braided USB Type-C to Type-A cable for durable and reliable connectivity. Fast charging and data transfer with premium construction.",
             specs: [
                 "1.8 meter length",
@@ -533,8 +533,8 @@ const allProducts = {
             price: 399,
             rating: 4.4,
             reviews: 58,
-            quantity: 98,
-            imageUrl: "mousepad.png",
+            quantity: 100,
+            imageUrl: "pad.png",
             description: "Premium cloth surface mousepad with optimized texture for precise tracking. Non-slip rubber base keeps it firmly in place during intense gaming sessions.",
             specs: [
                 "320 x 270 x 3 mm dimensions",
@@ -552,8 +552,8 @@ const allProducts = {
             price: 1499,
             rating: 4.6,
             reviews: 52,
-            quantity: 12,
-            imageUrl: "wireless-trackpad.png",
+            quantity: 50,
+            imageUrl: "trackpad.png",
             description: "Advanced wireless trackpad with multi-touch gesture support. Navigate with precision using intuitive gestures on a smooth glass surface.",
             specs: [
                 "Multi-touch glass surface",
@@ -572,7 +572,7 @@ const allProducts = {
             rating: 4.7,
             reviews: 76,
             quantity: 46,
-            imageUrl: "game-controller.png",
+            imageUrl: "controller.png",
             description: "Professional-grade gaming controller with customizable buttons and triggers. Experience precise control and comfort during extended gaming sessions.",
             specs: [
                 "Ergonomic design with textured grips",
@@ -590,8 +590,8 @@ const allProducts = {
             price: 599,
             rating: 4.5,
             reviews: 42,
-            quantity: 27,
-            imageUrl: "headphone-stand.png",
+            quantity: 50,
+            imageUrl: "stand.png",
             description: "Elegant headphone stand with built-in USB hub. Display and protect your headphones while adding functionality to your desktop setup.",
             specs: [
                 "Aluminum construction",
@@ -604,7 +604,6 @@ const allProducts = {
         }
     ]
 };
-
 // Admin credentials
 const admins = [
     { username: "marlon.abao", password: "admin123" },
@@ -623,6 +622,7 @@ let currentCategory = 'keyboards';
 let currentPriceFilter = 'all';
 let currentSort = 'popularity';
 let currentSection = 'home';
+let currentProduct = null;
 
 // DOM Elements
 const navLinks = document.querySelectorAll('.nav-link');
@@ -659,6 +659,9 @@ const orderConfirmationModal = document.getElementById('orderConfirmationModal')
 const receiptContent = document.getElementById('receiptContent');
 const printReceiptBtn = document.getElementById('printReceiptBtn');
 const closeConfirmationBtn = document.getElementById('closeConfirmationBtn');
+const productDetailModal = document.getElementById('productDetailModal');
+const productDetailContent = document.getElementById('productDetailContent');
+const closeProductModal = document.querySelector('.close-product-modal');
 
 // Category metadata
 const categoryDescriptions = {
@@ -671,7 +674,7 @@ const categoryDescriptions = {
 
 const categoryTitles = {
     keyboards: "Gaming Keyboards",
-    mice: "Gaming Mice & Trackpads",
+    mice: "Gaming Mice",
     monitors: "Gaming & Professional Monitors",
     audio: "Audio Peripherals",
     accessories: "Essential Accessories"
@@ -802,7 +805,33 @@ function updateProducts() {
         productsGrid.appendChild(noProductsMessage);
     } else {
         sortedProducts.forEach(product => {
-            productsGrid.appendChild(createProductCard(product));
+            const card = createProductCard(product);
+            productsGrid.appendChild(card);
+            
+            // Add event listener for view details
+            card.querySelector('.view-details').addEventListener('click', (e) => {
+                e.preventDefault();
+                showProductDetail(product.id, product.category);
+            });
+            
+            // Add to cart button
+            card.querySelector('.add-to-cart').addEventListener('click', (e) => {
+                const productCard = e.target.closest('.product-card');
+                if (productCard) {
+                    const productLink = productCard.querySelector('a')?.getAttribute('href');
+                    if (productLink) {
+                        const urlParams = new URLSearchParams(productLink.split('?')[0]);
+                        const id = parseInt(urlParams.get('id'));
+                        const product = findProductById(id);
+                        
+                        if (product) {
+                            addToCart(product);
+                            e.target.textContent = 'Added!';
+                            setTimeout(() => e.target.textContent = 'Add to Cart', 2000);
+                        }
+                    }
+                }
+            });
         });
     }
 }
@@ -824,7 +853,23 @@ function loadFeaturedProducts() {
     }
     
     featuredProducts.slice(0, 4).forEach(product => {
-        featuredProductsGrid.appendChild(createProductCard(product));
+        const card = createFeaturedProductCard(product);
+        featuredProductsGrid.appendChild(card);
+        
+        // Add to cart button for featured products
+        card.querySelector('.add-to-cart').addEventListener('click', (e) => {
+            const productCard = e.target.closest('.product-card');
+            if (productCard) {
+                const productName = productCard.querySelector('.product-title').textContent;
+                const product = getAllProductsArray().find(p => p.name === productName);
+                
+                if (product) {
+                    addToCart(product);
+                    e.target.textContent = 'Added!';
+                    setTimeout(() => e.target.textContent = 'Add to Cart', 2000);
+                }
+            }
+        });
     });
 }
 
@@ -899,24 +944,102 @@ function switchSection(sectionId) {
     if (activeNavLink) activeNavLink.classList.add('active');
 }
 
+// Product Detail Functions
+function showProductDetail(productId, category) {
+    currentProduct = allProducts[category].find(p => p.id === productId);
+    if (!currentProduct) return;
+
+    const images = [currentProduct.imageUrl];
+
+    productDetailContent.innerHTML = `
+        <div class="product-detail-gallery">
+            <div class="product-detail-main-image">
+                <img src="${currentProduct.imageUrl}" alt="${currentProduct.name}">
+            </div>
+            ${images.length > 1 ? `
+            <div class="product-detail-thumbnails">
+                ${images.map((img, index) => `
+                    <div class="product-detail-thumbnail ${index === 0 ? 'active' : ''}" data-img="${img}">
+                        <img src="${img}" alt="Thumbnail ${index + 1}">
+                    </div>
+                `).join('')}
+            </div>
+            ` : ''}
+        </div>
+        <div class="product-detail-info">
+            <h1 class="product-detail-title">${currentProduct.name}</h1>
+            <div class="product-rating">
+                <div class="stars">${getStarRating(currentProduct.rating)}</div>
+                <div class="review-count">(${currentProduct.reviews} reviews)</div>
+            </div>
+            <div class="product-detail-price">${formatPrice(currentProduct.price)}</div>
+            <div class="stock-status ${currentProduct.quantity > 0 ? 'in-stock' : 'out-of-stock'}">
+                ${currentProduct.quantity > 0 ? `In Stock (${currentProduct.quantity})` : 'Out of Stock'}
+            </div>
+            <p class="product-detail-description">${currentProduct.description}</p>
+            <div class="product-detail-features">
+                <h3>Key Features</h3>
+                <ul>
+                    ${currentProduct.specs.map(spec => `<li>${spec}</li>`).join('')}
+                </ul>
+            </div>
+            <div class="product-detail-actions">
+                <div class="quantity-selector">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" class="quantity-input" min="1" value="1" max="${currentProduct.quantity}">
+                </div>
+                <button class="add-to-cart" ${currentProduct.quantity <= 0 ? 'disabled' : ''}>
+                    Add to Cart
+                </button>
+            </div>
+        </div>
+    `;
+
+    productDetailModal.style.display = 'block';
+
+    // Add to Cart functionality
+    document.querySelector('#productDetailContent .add-to-cart').addEventListener('click', function() {
+        const quantity = parseInt(document.getElementById('quantity').value);
+        if (quantity > 0 && quantity <= currentProduct.quantity) {
+            addToCart({ ...currentProduct }, quantity);
+            this.textContent = 'Added!';
+            setTimeout(() => {
+                this.textContent = 'Add to Cart';
+                productDetailModal.style.display = 'none';
+            }, 2000);
+        }
+    });
+
+    // Close modal handler
+    closeProductModal.addEventListener('click', () => {
+        productDetailModal.style.display = 'none';
+    });
+}
+
 // Cart and Order Functions
-function addToCart(product) {
+function addToCart(product, quantity = 1) {
     const existingItem = cart.find(item => item.id === product.id);
     
     if (existingItem) {
-        existingItem.quantity += 1;
+        existingItem.quantity += quantity;
     } else {
-        cart.push({ ...product, quantity: 1 });
+        cart.push({ ...product, quantity });
+    }
+    
+    // Update stock
+    const productInInventory = findProductById(product.id);
+    if (productInInventory) {
+        productInInventory.quantity -= quantity;
     }
     
     updateCart();
-    showCartNotification(product.name);
+    showCartNotification(`${quantity} × ${product.name} added to cart`);
 }
 
-function showCartNotification(productName) {
+function showCartNotification(message) {
     const notification = document.createElement('div');
     notification.className = 'cart-notification';
-    notification.textContent = `${productName} added to cart`;
+    notification.textContent = message;
     document.body.appendChild(notification);
     
     setTimeout(() => notification.classList.add('show'), 10);
@@ -927,6 +1050,15 @@ function showCartNotification(productName) {
 }
 
 function removeFromCart(productId) {
+    const item = cart.find(item => item.id === productId);
+    if (item) {
+        // Return stock
+        const product = findProductById(productId);
+        if (product) {
+            product.quantity == item.quantity;
+        }
+    }
+    
     cart = cart.filter(item => item.id !== productId);
     updateCart();
 }
@@ -1101,10 +1233,21 @@ function displayAdminOrders() {
             const orderId = parseInt(btn.getAttribute('data-id'));
             const order = orders.find(o => o.id === orderId);
             
-            if (order) {
+            if (order && !order.fulfilled) {
                 order.fulfilled = true;
                 btn.textContent = 'Fulfilled';
                 btn.disabled = true;
+                
+                // Update stock for each item in the order
+                order.items.forEach(item => {
+                    const product = findProductById(item.id);
+                    if (product) {
+                        product.quantity == item.quantity;
+                    }
+                });
+                
+                updateProducts();
+                alert('Order fulfilled and stock updated!');
             }
         });
     });
@@ -1338,7 +1481,8 @@ function initAdminEventListeners() {
                 quantity: parseInt(document.getElementById('productQuantity').value) || 0,
                 imageUrl: document.getElementById('productImageUrl').value,
                 description: document.getElementById('productDescription').value,
-                specs: document.getElementById('productSpecs').value.split(',').map(spec => spec.trim())
+                specs: document.getElementById('productSpecs').value.split(',').map(spec => spec.trim()),
+                images: [document.getElementById('productImageUrl').value]
             };
             
             if (isNewProduct) {
@@ -1362,39 +1506,40 @@ function initAdminEventListeners() {
 }
 
 function initCartEventListeners() {
-    cartIcon.addEventListener('click', (e) => {
+    if (cartIcon) cartIcon.addEventListener('click', (e) => {
         e.preventDefault();
         cartDropdown.style.display = cartDropdown.style.display === 'block' ? 'none' : 'block';
     });
     
     document.addEventListener('click', (e) => {
-        if (!cartIcon.contains(e.target) && !cartDropdown.contains(e.target)) {
+        if (cartIcon && !cartIcon.contains(e.target) && cartDropdown && !cartDropdown.contains(e.target)) {
             cartDropdown.style.display = 'none';
         }
     });
     
-    cartItems.addEventListener('click', (e) => {
+    if (cartItems) cartItems.addEventListener('click', (e) => {
         if (e.target.classList.contains('cart-item-remove')) {
             const productId = parseInt(e.target.getAttribute('data-id'));
             removeFromCart(productId);
         }
     });
     
-    checkoutBtn.addEventListener('click', (e) => {
+    if (checkoutBtn) checkoutBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        cartDropdown.style.display = 'none';
-        checkoutModal.style.display = 'block';
+        if (cartDropdown) cartDropdown.style.display = 'none';
+        if (checkoutModal) checkoutModal.style.display = 'block';
         updateOrderSummary();
     });
     
     document.querySelectorAll('.close-modal').forEach(btn => {
         btn.addEventListener('click', () => {
-            checkoutModal.style.display = 'none';
-            orderConfirmationModal.style.display = 'none';
+            if (checkoutModal) checkoutModal.style.display = 'none';
+            if (orderConfirmationModal) orderConfirmationModal.style.display = 'none';
+            if (productDetailModal) productDetailModal.style.display = 'none';
         });
     });
     
-    checkoutForm.addEventListener('submit', (e) => {
+    if (checkoutForm) checkoutForm.addEventListener('submit', (e) => {
         e.preventDefault();
         
         const order = {
@@ -1411,16 +1556,18 @@ function initCartEventListeners() {
         };
         
         orders.push(order);
-        receiptContent.innerHTML = generateReceipt(order);
-        checkoutModal.style.display = 'none';
-        orderConfirmationModal.style.display = 'block';
+        if (receiptContent) receiptContent.innerHTML = generateReceipt(order);
+        if (checkoutModal) checkoutModal.style.display = 'none';
+        if (orderConfirmationModal) orderConfirmationModal.style.display = 'block';
         cart = [];
         updateCart();
         checkoutForm.reset();
     });
     
-    printReceiptBtn.addEventListener('click', () => window.print());
-    closeConfirmationBtn.addEventListener('click', () => orderConfirmationModal.style.display = 'none');
+    if (printReceiptBtn) printReceiptBtn.addEventListener('click', () => window.print());
+    if (closeConfirmationBtn) closeConfirmationBtn.addEventListener('click', () => {
+        if (orderConfirmationModal) orderConfirmationModal.style.display = 'none';
+    });
 }
 
 // Initialize Page
@@ -1433,6 +1580,17 @@ function initPage() {
         updateProducts();
     } else {
         switchSection('home');
+    }
+    
+    // Handle product detail page
+    if (window.location.pathname.includes('product-detail.html')) {
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = parseInt(urlParams.get('id'));
+        const category = urlParams.get('category');
+        
+        if (id && category) {
+            showProductDetail(id, category);
+        }
     }
     
     loadFeaturedProducts();
@@ -1544,6 +1702,7 @@ function initPage() {
     window.addEventListener('click', function(e) {
         if (e.target === adminLoginModal) adminLoginModal.style.display = 'none';
         if (e.target === adminPanelModal) adminPanelModal.style.display = 'none';
+        if (e.target === productDetailModal) productDetailModal.style.display = 'none';
     });
 
     window.addEventListener('hashchange', function() {
